@@ -125,3 +125,10 @@ wget https://raw.githubusercontent.com/smfreegard/DecodeShortURLs/master/DecodeS
 chmod 644 /etc/spamassassin/myplugins/DecodeShortURLs.pm
 chmod 644 /etc/spamassassin/myplugins/DecodeShortURLs.cf
 ```
+
+edit ```/etc/spamassassin/local.cf``` and add this config:
+
+```
+include /etc/spamassassin/myplugins/DecodeShortURLs.pm
+include /etc/spamassassin/myplugins/DecodeShortURLs.cf
+```
