@@ -12,7 +12,7 @@ do an HTTP HEAD lookup and retrieve the location header which points to the
 actual shortened URL, it then adds this URL to the list of URIs extracted by 
 SpamAssassin which can then be accessed by other plug-ins, such as URIDNSBL.
 
-This plugin also sets the rule HAS_SHORT_URL if any matching short URLs are 
+This plugin also sets the rule ```HAS_SHORT_URL``` if any matching short URLs are 
 found.
 
 Regular 'uri' rules can be used to detect and score links disabled by the
