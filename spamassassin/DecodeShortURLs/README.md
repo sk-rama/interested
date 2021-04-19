@@ -88,7 +88,7 @@ DecodeShortURLs Settings
 ------------------------
 
 **URL shortener cache** - ```url_shortener_cache```
-The full path to a database file to write cache entries to. The database will be created automatically if is does not already exist but the supplied path and file must be read/writable by spamd. 
+The full path to a database file to write cache entries to. The database will be created automatically if is does not already exist but the supplied path and file must be read/writable by spamd.  
 NOTE: you will need the DBD::SQLite module installed to use this feature.  
 Default: /tmp/DecodeShortURLs.sq3  
 
