@@ -64,7 +64,9 @@ a good example from someone that does ;-)
 SOURCE
 ------
 
-https://github.com/smfreegard/DecodeShortURLs/blob/master/README.md
+https://github.com/smfreegard/DecodeShortURLs/blob/master/README.md  
+https://docs.danami.com/warden/user-guide/antispam-plugins/decodeshorturls  
+https://docs.danami.com/warden/settings/antispam/plugin-settings/decodeshorturls
 
 TESTS
 -----
@@ -104,6 +106,18 @@ Default: empty
 Log decoded URLs to syslog.  
 Default: 0
 
-**URL shorteners** - ```url_shortener``
+**URL shorteners** - ```url_shortener```
 A list of URL shortener services (one entry per line).  
 Default: empty
+
+
+Install
+-------
+
+**Debian / Ubuntu:**
+
+```
+mkdir /etc/spamassassin/myplugins
+wget https://raw.githubusercontent.com/smfreegard/DecodeShortURLs/master/DecodeShortURLs.pm -P /etc/spamassassin/myplugins/
+chmod 644 /etc/spamassassin/myplugins/DecodeShortURLs.pm
+```
