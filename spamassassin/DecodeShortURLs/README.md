@@ -16,25 +16,25 @@ This plugin also sets the rule ```HAS_SHORT_URL``` if any matching short URLs ar
 found.
 
 Regular 'uri' rules can be used to detect and score links disabled by the
-shortening service for abuse and URL_BITLY_BLOCKED is supplied as an example.
+shortening service for abuse and ```URL_BITLY_BLOCKED``` is supplied as an example.
 It should be safe to score this rule highly on a match as experience shows
 that bit.ly only blocks access to a URL if it has seen consistent abuse and
 problem reports.
 
 As of version 0.3 this plug-in will follow 'chained' shorteners e.g.
 
-short URL -> short URL -> short URL -> real URL
+```short URL``` -> ```short URL``` -> ```short URL``` -> ```real URL```
 
-If this form of chaining is found, then the rule 'SHORT_URL_CHAINED' will be
-fired.  If a loop is detected then 'SHORT_URL_LOOP' will be fired.
-This plug-in limits the number of chained shorteners to a maximim of 10 at 
-which point it will fire the rule 'SHORT_URL_MAXCHAIN' and go no further.
+If this form of chaining is found, then the rule ```SHORT_URL_CHAINED``` will be
+fired.  If a loop is detected then ```SHORT_URL_LOOP``` will be fired.
+This plug-in limits the number of chained shorteners to a maximim of ```10``` at 
+which point it will fire the rule ```SHORT_URL_MAXCHAIN``` and go no further.
 
-If a shortener returns a '404 Not Found' result for the short URL then the 
+If a shortener returns a '**404 Not Found**' result for the short URL then the 
 rule 'SHORT_URL_404' will be fired.
 
 If a shortener does not return an HTTP redirect, then a dynamic rule will
-be fired: 'SHORT_\<SHORTENER\>_\<CODE\>' where \<SHORTENER\> is the uppercase
+be fired: **'SHORT_\<SHORTENER\>_\<CODE\>'** where **\<SHORTENER\>** is the uppercase
 name of the shortener with dots converted to underscores.  e.g.:
 'SHORT_T_CO_200' This is to handle the case of t.co which now returns an
 HTTP 200 and an abuse page instead of redirecting to an abuse page like
