@@ -31,7 +31,7 @@ This plug-in limits the number of chained shorteners to a maximim of ```10``` at
 which point it will fire the rule ```SHORT_URL_MAXCHAIN``` and go no further.
 
 If a shortener returns a '**404 Not Found**' result for the short URL then the 
-rule 'SHORT_URL_404' will be fired.
+rule **'SHORT_URL_404'** will be fired.
 
 If a shortener does not return an HTTP redirect, then a dynamic rule will
 be fired: **'SHORT_\<SHORTENER\>_\<CODE\>'** where **\<SHORTENER\>** is the uppercase
@@ -65,3 +65,20 @@ SOURCE
 ------
 
 https://github.com/smfreegard/DecodeShortURLs/blob/master/README.md
+
+TESTS
+-----
+
+| Area | Test name           | Description                                                         | Default scores |
+|------|---------------------|---------------------------------------------------------------------|----------------|
+| body | HAS_SHORT_URL       | Message contains one or more shortened URLs                         | 0.01           |
+| body | SHORT_URL_CHAINED   | Message has shortened URL chained to other shorteners               | 3.0            |
+| body | SHORT_URL_MAXCHAIN  | Message has shortened URL that causes more than 10 redirections     | 5.0            |
+| body | SHORT_URL_LOOP      | Message has short URL that loops back to itself                     | 0.01           |
+| body | SHORT_URL_404       | Message has short URL that returns 404                              | 1.0            |
+| body | SHORT_T_CO_200      | Message contains a t.co URL that has a warning due to abuse         | 10.0           |
+| body | URI_BITLY_BLOCKED   | Message contains a bit.ly URL that has been disabled due to abuse   | 10.0           |
+| body | URI_SIMURL_BLOCKED  | Message contains a simurl URL that has been disabled due to abuse   | 10.0           |
+| body | URI_MIGRE_BLOCKED   | Message contains a migre.me URL that has been disabled due to abuse | 10.0           |
+| body | URI_TINYURL_BLOCKED | Message contains a tinyurl that has been disabled due to abuse      | 10.0           |
+| meta | SHORT_URIBL         | Message contains shortened URL(s) and also hits a URIDNSBL          | 0.01           |
