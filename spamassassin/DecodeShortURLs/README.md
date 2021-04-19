@@ -92,18 +92,18 @@ The full path to a database file to write cache entries to. The database will be
 NOTE: you will need the DBD::SQLite module installed to use this feature.  
 Default: /tmp/DecodeShortURLs.sq3  
 
-URL shortener cache TTL - url_shortener_cache_ttl
-The length of time a cache entry will be valid for in seconds.
+**URL shortener cache TTL** - ```url_shortener_cache_ttl```
+The length of time a cache entry will be valid for in seconds.  
 Default: 86400
 
-URL shortener log - url_shortener_log
+**URL shortener log** - ```url_shortener_log```
 The full path to a log file to be written to. The file will be created if it does not already exist and must be writable by spamd.
 Default: empty
 
-URL shortener log to syslog - url_shortener_syslog
-Log decoded URLs to syslog.
+**URL shortener log to syslog** - ```url_shortener_syslog```
+Log decoded URLs to syslog.  
 Default: 0
 
-URL shorteners - url_shortener
-A list of URL shortener services (one entry per line).
+**URL shorteners** - ```url_shortener``
+A list of URL shortener services (one entry per line).  
 Default: empty
