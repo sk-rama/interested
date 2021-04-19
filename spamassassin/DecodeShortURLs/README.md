@@ -118,6 +118,10 @@ Install
 
 ```
 mkdir /etc/spamassassin/myplugins
+
 wget https://raw.githubusercontent.com/smfreegard/DecodeShortURLs/master/DecodeShortURLs.pm -P /etc/spamassassin/myplugins/
+wget https://raw.githubusercontent.com/smfreegard/DecodeShortURLs/master/DecodeShortURLs.cf -P /etc/spamassassin/myplugins/
+
 chmod 644 /etc/spamassassin/myplugins/DecodeShortURLs.pm
+chmod 644 /etc/spamassassin/myplugins/DecodeShortURLs.cf
 ```
