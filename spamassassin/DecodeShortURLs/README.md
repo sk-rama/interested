@@ -60,3 +60,8 @@ GUDO.pm for which this plugin would not be possible due to the SpamAssassin
 API making no provision for adding to the base list of extracted URIs and 
 the author not knowing enough about Perl to be able to achieve this without 
 a good example from someone that does ;-)
+
+SOURCE
+------
+
+https://github.com/smfreegard/DecodeShortURLs/blob/master/README.md
