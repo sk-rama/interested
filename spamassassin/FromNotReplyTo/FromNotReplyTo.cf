@@ -1,4 +1,4 @@
-loadplugin FromNotReplyTo FromNotReplyTo.pm
+loadplugin FromNotReplyTo myplugins/FromNotReplyTo.pm
 header FROM_NOT_REPLYTO eval:check_for_from_not_reply_to()
 score FROM_NOT_REPLYTO 4.0
 describe FROM_NOT_REPLYTO From: does not match Reply-To:
