@@ -2,7 +2,7 @@
 
 Sometimes all you want is a really simple responsive HTML email template with a clear call-to-action button. Here it is.
 
-[See live preview - email.html](https://github.com/sk-rama/interested/blob/main/html-email-templates/responsive-html-email-template/email.html).
+[See live preview - email.html](email.html?raw=true).
 
 [See live preview- email-inlined.html](https://github.com/sk-rama/interested/blob/main/html-email-templates/responsive-html-email-template/email-inlined.html).
 
