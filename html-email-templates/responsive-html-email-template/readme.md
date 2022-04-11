@@ -6,7 +6,7 @@ Sometimes all you want is a really simple responsive HTML email template with a 
 
 [See live preview- email-inlined.html](https://github.com/sk-rama/interested/blob/main/html-email-templates/responsive-html-email-template/email-inlined.html).
 
-<img src="https://user-images.githubusercontent.com/15963/29055956-8dcca38e-7bb4-11e7-8a86-7b056ebf673d.png" alt="Simple HTML Email" width="500">
+<img src="https://github.com/sk-rama/interested/tree/main/html-email-templates/responsive-html-email-template/img/email.png" alt="Simple HTML Email" width="500">
 
 ## Inline your CSS before sending
 
