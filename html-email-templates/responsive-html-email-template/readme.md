@@ -46,9 +46,8 @@ Example:
 
 Tested on mobile, desktop and web.
 
-![Templates Tested on Email Clients](https://cloud.githubusercontent.com/assets/15963/17391543/bc289abe-59cb-11e6-9946-605a85f8c522.jpg)
+![Templates Tested on Email Clients]!(img/email2.jpg?raw=true)
 
-[See the Litmus test results](https://litmus.com/checklist/emails/public/233ded7).
 
 ## More HTML email resources
 
@@ -58,5 +57,3 @@ Tested on mobile, desktop and web.
 * [Everything Web Developers Need To Know About Transactional Email](https://webdesign.tutsplus.com/articles/everything-developers-need-to-know-about-sending-transactional-email--cms-31759)
 * [Manage and Send Email Templates To Yourself](https://postdrop.io)
 
-This free template is part of a pack of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
-[![image](https://user-images.githubusercontent.com/15963/111846354-df393280-88c3-11eb-959c-10a3916d5733.png)](https://htmlemail.io)
