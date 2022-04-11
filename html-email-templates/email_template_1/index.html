@@ -16,7 +16,7 @@
         /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
 	    
 :root {
-    --my_fonts: source sans pro,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    --my_fonts: "source sans pro",-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
 	    
 html,
@@ -179,7 +179,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 body{
-	font-family: 'Lato', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
+	font-family: var(--my_fonts)
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.8;
