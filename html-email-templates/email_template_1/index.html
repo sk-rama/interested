@@ -14,7 +14,12 @@
 
         /* What it does: Remove spaces around the email design added by some email clients. */
         /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-        html,
+	    
+:root {
+    --my_fonts: source sans pro,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+	    
+html,
 body {
     margin: 0 auto !important;
     padding: 0 !important;
